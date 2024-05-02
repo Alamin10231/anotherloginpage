@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registration.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="contain fixed flex justify-center items-center h-screen w-full">
+        <form class="main bg-white drop-shadow-lg flex w-[400px] h-[600px] bg-center border-1 rounded-md justify-center mx-4 " id="form">
+            <div class="allelement py-10 md:py-14 lg:py-14  md:mx-4 " id="form">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl py-12 cursor-pointer" id="login">Login</h1>
+                <div class="">
+                    <div class="flex">
+                        <p class="text-md sm:text-lg md:text-lg lg:text-lg xl:text-xl ">
+                            <input type="email" id="email" placeholder="USERNAME" class="border shadow-inner shadow-gray-500/50 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 " required>
+                        </p>
+                    </div> 
+                    <div class="flex pt-6 sm:pt-6 md:pt-7 ">
+                        <p class="text-md sm:text-lg md:text-lg lg:text-lg xl:text-xl ">
+                            <input type="password" id="password" placeholder="PASSWORD" class="border shadow-inner shadow-gray-500/50 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 " required>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="absolute bottom-10 md:bottom-8 flex space-x-[100px] cursor-pointer">
+                
+                <button class="link" id="register " onclick="myfunction()"> Register</button>
+                
+                <a href="#" class="link" id="forgetpassword">Forget Password</a>
+            </div>
+        </form>
+ 
+        
+    </div>
+    
+    
+</body>
+</html>

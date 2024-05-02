@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="registration.html">
+
+  <script src="scriptregister.js"></script>
+</head>
+
+<body>
+    <div class="contain flex justify-center items-center h-screen w-full ">
+        <div class="main-container mx-auto">
+
+        
+        <form id="myForm" class="main bg-white drop-shadow-lg flex w-[400px] h-[600px] bg-center border-1 rounded-md justify-center text-center">
+            <div class="allelement container mx-auto  py-8 md:py-7 lg:py-6  md:mx-36  items-center justify-center">
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl py-6 border-b-2 solid-black ">Registration</h1>
+                <div class="items-center justify-center  mx-20 md:mx-16">
+
+                
+            <label for="name" class="sm:text-xl  md:text-2xl lg:text-2xl">Name:</label><br>
+            <input class="border shadow-inner my-2 shadow-gray-500/50  border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 sm:text-sm md:text-md lg:text-lg" type="text" id="name" name="name"><br>
+
+            <label for="email" class="sm:text-xl  md:text-2xl lg:text-2xl" >Email:</label><br>
+            <input class="border shadow-inner shadow-gray-500/50  border-gray-300 rounded-md px-4 py-2 my-2 focus:outline-none focus:border-blue-500 sm:text-sm md:text-md lg:text-lg" type="email" id="email" name="email"><br>
+            <label for="password" class="sm:text-xl  md:text-2xl lg:text-2xl" >Password:</label><br>
+            <input class="border shadow-inner shadow-gray-500/50 border-gray-300 rounded-md px-4 py-2 my-2 focus:outline-none focus:border-blue-500 sm:text-sm md:text-md lg:text-lg" type="password" id="password" name="password"><br><br>
+
+
+            <div class="pt-4 md:pt-2 pb-3 md:pb-2 flex space-x-6  solid-black mx-16 md:mx-20" id="gender">
+                <div>
+                    <input type="radio" name="male" id="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="male" id="female" required>
+                    <label for="Female">Female</label>
+                </div>
+            
+            </div>
+            <button class="btn mt-2 md:mt-3 lg:mt-4 bg-blue-500 px-4 py-2 rounded-lg" id="btn" type="button" onclick="submitForm()">Submit</button>
+            
+        </div>
+        </div>
+          </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
